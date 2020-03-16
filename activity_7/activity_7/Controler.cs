@@ -32,7 +32,7 @@ namespace activity_7
                 {
 
                     case 1:
-                        Console.WriteLine("Enter Number of item you weat to input:");
+                        Console.WriteLine("Enter Number of item you wwant to input:");
                         b = Convert.ToInt32(Console.ReadLine());
                         string[] word = new string[b];
 
@@ -46,7 +46,7 @@ namespace activity_7
                         {
                             int selection2 ;
                         Console.WriteLine("Enter your selection");
-                        Console.WriteLine("1: Sort Words");
+                        Console.WriteLine("1: Display words with a lenght:");
                         Console.WriteLine("2: Exit");
                         selection2 = Convert.ToInt32(Console.ReadLine());
                         if (selection2 == 2)
@@ -57,7 +57,7 @@ namespace activity_7
                             {
                                 case 1:
                                     int a;
-                                    Console.WriteLine("Enter lengeth of words to display");
+                                    Console.WriteLine("Display words greater then number:");
                                     a = Convert.ToInt32(Console.ReadLine());
 
                                     var temp1 = Enumerable.Where(word, word1 => word1.Length > a);
